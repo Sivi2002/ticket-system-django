@@ -1,0 +1,15 @@
+{% load static %}
+
+<form id="updateForm">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <div style="display: flex; align-items: center; justify-content: center">
+        <button type="submit">Update a ticket</button>
+    </div>
+</form>
+
+<script>
+    var url = "{{ url }}";
+</script>
+
+<script src="{% static 'edit.js' %}"></script>

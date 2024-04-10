@@ -1,0 +1,9 @@
+{% load static %}
+<h2>Log a ticket</h2>
+<form id="myForm">
+  {% csrf_token %} {{ form.as_p }}
+  <div style="display: flex; align-items: center; justify-content: center">
+    <button id="updateButton" type="submit">Log a ticket</button>
+  </div>
+</form>
+<script src="{% static 'form.js' %}"></script>

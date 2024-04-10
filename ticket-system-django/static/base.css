@@ -1,0 +1,84 @@
+/* Global Styles */
+body {
+  margin: 2% 10%;
+  font-family: Arial, sans-serif; /* Ensure consistency in font */
+}
+
+/* Table Styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+/* Alternate row background color */
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Button Column Styles */
+.button-column {
+  width: 100px; /* Adjust width as needed */
+}
+
+.button-column button {
+  width: 100%;
+  padding: 8px; /* Adjust padding for consistency */
+  border: none;
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px; /* Add border-radius for better appearance */
+  transition: background-color 0.3s ease; /* Add transition for smooth hover effect */
+}
+
+/* Hover effect on buttons */
+.button-column button:hover {
+  background-color: #45a049;
+}
+
+/* Form Input Styles */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea,
+select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+/* Button Styles */
+button,
+input[type="submit"],
+input[type="reset"] {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  background-color: #0056b3;
+}
+
+/* Initially hidden anchor tag */
+.hidden {
+  display: none;
+}
